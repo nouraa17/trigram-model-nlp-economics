@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  background-image: url('36690d0889a690fcddbe.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.87);
+}
+
+.container {
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: -20px; 
+  z-index: 1;
+  color: rgb(2, 82, 109);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h1 {
+  text-align: center;
+  margin-bottom: 20px; 
+  z-index: 1;
+}
+span {
+  text-align: center;
+  color: rgb(168, 110, 24);
+  background-color: beige;
+}
+.search-bar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-box {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1;
+  width: 150%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+
+
+}
+
+#dropdown-menu {
+  position: absolute;
+  top: calc(50% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 150%;
+  max-width: 400px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+
+}
+
+#dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+#dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
